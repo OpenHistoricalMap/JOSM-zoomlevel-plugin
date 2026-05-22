@@ -13,15 +13,9 @@ JOSM's internal scale using the standard Web Mercator formula:
 The decimal precision makes small zoom changes visible that would be invisible
 as integers. Values update live as you zoom or pan.
 
-## Screenshots
+## Screenshot
 
-<!-- TODO: screenshot of status bar with zoom field next to lat/lon coordinates -->
-*Status bar showing the zoom field (magnifying-glass icon) immediately right of
-the lon display.*
-
-<!-- TODO: screenshot of OSM/OHM tab opened by the link button -->
-*The link button opens the current view in OpenStreetMap or OpenHistoricalMap
-depending on the configured JOSM API server.*
+<img alt="screenshot of zoomlevel plugin info in JOSM status bar: zoom level and link out to OSM/OHM for same view" src="https://github.com/OpenHistoricalMap/JOSM-zoomlevel-plugin/blob/main/images/zoomlevel-plugin.jpg" />
 
 ## Features
 
