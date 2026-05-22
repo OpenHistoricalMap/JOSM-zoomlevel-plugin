@@ -1,0 +1,25 @@
+plugins {
+    id 'org.openstreetmap.josm' version '0.8.2'
+}
+
+project.version = '0.1.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+josm {
+    josmCompileVersion = Integer.parseInt(project.property('plugin.compile.version'))
+    manifest {
+        description = 'Shows the current MapView\'s approximate web-map zoom level (decimal) in the status bar.'
+        mainClass = 'org.openhistoricalmap.josm.zoomindicator.ZoomIndicatorPlugin'
+        minJosmVersion = Integer.parseInt(project.property('plugin.main.version'))
+        author = 'OpenHistoricalMap contributors'
+        canLoadAtRuntime = true
+    }
+}
