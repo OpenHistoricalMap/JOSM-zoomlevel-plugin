@@ -1,4 +1,4 @@
-# ohm-josm-zoom-indicator
+# zoomlevel
 
 A JOSM plugin that displays the current MapView's web-map-style zoom
 level (decimal, e.g. `z=14.27`) in the status bar. Updates live on
@@ -19,7 +19,7 @@ user direction.
   EPSG:3857. Don't generalize to other projections.
 - **Repo lives in the `OpenHistoricalMap` GitHub org** directly (not
   personal-first then migrated).
-- **License: Unlicense.** Matches other OHM tooling.
+- **License: GPL-2.0-or-later.** Required for JOSM plugin compatibility; JOSM itself is GPL-2.0-or-later.
 - **Java package: `org.openhistoricalmap.josm.zoomindicator`.**
 
 ## Build
@@ -27,11 +27,11 @@ user direction.
     gradle wrapper --gradle-version 8.5   # one-time, if no ./gradlew yet
     ./gradlew dist
 
-Output: `build/dist/ohm-josm-zoom-indicator.jar`.
+Output: `build/dist/zoomlevel.jar`.
 
 ## Install for local testing (macOS)
 
-    cp build/dist/ohm-josm-zoom-indicator.jar \
+    cp build/dist/zoomlevel.jar \
        ~/Library/Application\ Support/JOSM/plugins/
 
 Restart JOSM, enable in Preferences → Plugins.
