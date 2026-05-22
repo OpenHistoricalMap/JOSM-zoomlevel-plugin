@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: 2026 OpenHistoricalMap
+// SPDX-License-Identifier: GPL-2.0-or-later
 plugins {
     id 'org.openstreetmap.josm' version '0.8.2'
 }
@@ -19,7 +21,8 @@ josm {
         description = 'Shows the current MapView\'s approximate web-map zoom level (decimal) in the status bar.'
         mainClass = 'org.openhistoricalmap.josm.zoomindicator.ZoomIndicatorPlugin'
         minJosmVersion = Integer.parseInt(project.property('plugin.main.version'))
-        author = 'OpenHistoricalMap contributors'
+        author = 'OpenHistoricalMap'
         canLoadAtRuntime = true
+        iconPath = 'images/zoomlevel.svg'
     }
 }
