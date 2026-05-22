@@ -66,7 +66,7 @@ Output: `build/dist/zoomlevel.jar`
 | JOSM | ≥ 18877 |
 | Java (build) | 17 |
 | Java (runtime) | 11+ |
-| Gradle wrapper | 7.6.4 |
+| Gradle wrapper | 8.5 |
 
 ## License
 
